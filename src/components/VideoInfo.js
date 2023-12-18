@@ -47,10 +47,10 @@ const VideoInfo = ({ info, params }) => {
                             className="rounded-full h-14 w-14"
                         />
                         <div className="">
-                            <div className="font-bold text-lg pl-3">
+                            <div className="font-bold text-xl pl-3">
                                 {info[0]?.snippet?.channelTitle}
                             </div>
-                            <div className="font-bold">{info[0]?.statistics?.likeCount} subscribers</div>
+                            <div className="font-semibold text-sm pl-4">{info[0]?.statistics?.likeCount} subscribers</div>
                         </div>
                     </div>
                     <div className="sm:flex">
