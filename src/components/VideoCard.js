@@ -38,14 +38,14 @@ export const ADVideoCard = ({ info }) => {
     const { snippet } = info;
 
     return (
-        <div className="mt-4 sm:m-2 sm:p-2 border border-red-700 shadow-2xl rounded-lg w-full max-w-sm mx-auto sm:h-[18rem] sm:w-[17rem] cursor-pointer">
+        <div className="mt-4 sm:m-2 sm:p-2 border border-red-700 sm:border-blue-700 shadow-2xl rounded-lg w-full max-w-sm mx-auto sm:w-[17rem] cursor-pointer">
             <ul>
                 <img className="sm:h-42 rounded-xl w-full" src={snippet?.thumbnails?.high?.url} alt="thumbnail" />
-                <li className="text-lg font-bold">
+                <li className="text-lg font-bold px-1">
                     {snippet?.localized?.title.split(" ").slice(0, 4).join(" ") + "..."}
                 </li>
-                <li className="text-md font-bold">{snippet?.channelTitle}</li>
-                <li className="text-md font-medium">Sponsored 💰</li>
+                <li className="text-md font-bold ox-1">{snippet?.channelTitle}</li>
+                <li className="text-md font-medium px-1">Sponsored 💰</li>
             </ul>
         </div>
     );
