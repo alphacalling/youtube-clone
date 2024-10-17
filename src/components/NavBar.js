@@ -82,8 +82,8 @@ const NavBar = () => {
             </div>
 
             {/* Search */}
-            <div className='col-span-8 flex justify-center md:w-2/3 max-sm:w-full max-sm:justify-center'>
-                // <div className='flex w-full md:w-2/3'>
+            <div className='col-span-8 flex justify-between md:w-2/3 max-sm:w-full max-sm:justify-center'>
+                <div className='flex w-full md:w-2/3'>
                     <input type="text"
                         placeholder='Search'
                         className='border rounded-l-2xl sm:w-full border-gray-400 p-2'
@@ -98,7 +98,7 @@ const NavBar = () => {
                     >
                         🔍
                     </button>
-                // </div>
+                </div>
 
                 {/* Suggestions */}
                 {hideSuggestion && (
