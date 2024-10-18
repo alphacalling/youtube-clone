@@ -12,5 +12,5 @@ code {
     monospace;
 }
 body{
-    overflow: hidden;
+    overflow-x: hidden;
 }
