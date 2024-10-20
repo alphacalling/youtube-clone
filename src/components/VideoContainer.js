@@ -64,7 +64,7 @@ const VideoContainer = () => {
     if (!videos) return null;
 
     return (videos.length == 0) ? (<Shimmer />) : (
-        <div className='sm:flex sm:flex-wrap sm:justify-evenlyp'>
+        <div className='sm:flex sm:flex-wrap sm:justify-evenly'>
 
             {/* Sponsored Video */}
             {videos[10] && <ADVideoCard info={videos[10]} />}
